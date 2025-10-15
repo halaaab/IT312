@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himaa Tuwaiq | Home</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="topbar">
+      <form class="search">
+        <input type="search" placeholder="search ...">
+      </form>
+
+      <nav class="main-nav">
+        <a href="HomePage.html" class="pill active">Home Page</a>
+        <a href="customer.html" class="pill">customer’s dashboard</a>
+        <a href="provider.html" class="pill">provider dashboard</a>
+        <a href="services.html" class="pill">Our services</a>
+        <a href="about.html" class="pill">About us</a>
+      </nav>
+
+      <div class="brand-side">
+        <span class="vision">vision statement</span>
+        <img src="../Images/logo.png" alt="Himaa Tuwaiq logo" class="logo">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO / INTRO ========== -->
+  <section class="intro">
+    <h1>Himaa Tuwaiq</h1>
+    <p>Empowering projects through innovation and excellence.</p>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <h3>Consulting</h3>
+        <p class="info">Professional advice and project guidance to help you grow.</p>
+      </div>
+      <div class="service-box">
+        <h3>Development</h3>
+        <p class="info">Building creative digital solutions tailored to your goals.</p>
+      </div>
+      <div class="service-box">
+        <h3>Design</h3>
+        <p class="info">Crafting elegant visuals that reflect your brand identity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS ========== -->
+  <section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review">
+      <h4>Consulting Service ⭐ ⭐ ⭐ ⭐ ⭐</h4>
+      <p>“Excellent experience — the team was professional and responsive.”</p>
+    </div>
+    <div class="review">
+      <h4>Development ⭐ ⭐ ⭐ ⭐ ½</h4>
+      <p>“Delivered a high-quality website ahead of schedule.”</p>
+    </div>
+    <div class="review">
+      <h4>Design ⭐ ⭐ ⭐ ⭐ ⭐</h4>
+      <p>“Loved the clean and creative design direction!”</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Himaa Tuwaiq · All rights reserved</p>
+    <p>Contact: <a href="mailto:info@himaatuwaiq.sa">info@himaatuwaiq.sa</a> | +966 50 000 0000</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
