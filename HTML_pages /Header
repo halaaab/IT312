@@ -1,0 +1,141 @@
+In Html
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="topbar">
+      <form class="search">
+        <input type="search" placeholder="search ...">
+      </form>
+
+      <nav class="main-nav">
+        <a href="HomePage.html" class="pill active">Home Page</a>
+        <a href="customer.html" class="pill">customer’s dashboard</a>
+        <a href="provider.html" class="pill">provider dashboard</a>
+        <a href="ServicesPage.html" class="pill">Our services</a>
+        <a href="about.html" class="pill">About us</a>
+      </nav>
+      
+
+      <div class="brand-side">
+        <img src="../Images/Green logo.png" alt="Himaa Tuwaiq logo" class="logo">
+      </div>
+    </div>
+    <div class="vision-statement">From Vision to Impact</div>
+  </header>
+
+
+
+
+
+
+
+
+
+in CSS 
+@font-face {
+  font-family: 'MyFont';
+  src: url('../Fonts/COMM-Lyon Arabic Display Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../Fonts/COMM-Lyon Arabic Display Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../Fonts/COMM-Lyon Arabic Display Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body { font-family: 'MyFont', sans-serif; }
+* { font-family: 'MyFont', sans-serif !important; }
+
+
+
+
+
+:root {
+  --green-dark: #00321a;
+  --gray-light: #f2f2f2;
+  --text-dark: #000;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  background: rgba(255,255,255,.9);
+  border-bottom: 1px solid #ddd;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  flex-wrap: wrap;
+}
+.search input {
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.main-nav {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.pill {
+  background: var(--gray-light);
+  color: var(--text-dark);
+  border: 1px solid #bbb;
+  border-radius: 5px;
+
+  /* ↓ Reduce padding (this mainly controls button size) */
+  padding: 6px 10px;
+
+  /* ↓ Reduce font size for smaller text */
+  font-size: 14px;
+
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.pill:hover {
+  background: var(--green-dark);
+  color: #fff;
+}
+.pill.active {
+  background: var(--green-dark);
+  color: #fff;
+}
+.brand-side {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.logo { height: 60px; }
+.vision-statement {
+  text-align: center;
+  font-size: 16px;
+  color: #033d1a;
+  font-weight: 1000;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+
+
+
+/* ===== INTRO ===== */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+} 
