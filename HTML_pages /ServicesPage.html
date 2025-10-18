@@ -40,12 +40,14 @@
   <!-- ================= HERO SECTION ================= -->
   <section class="hero">
     <!-- You can replace this image with your own -->
-    <img src="../Images/background.png" alt="Hero Image" class="hero-img">
+   
+     <img src="../Images/services page image.png" alt="Hero Image" class="hero-img">
+     <h2 class="section-title">Our Services</h2>
   </section>
 
   <!-- ================= SERVICES SECTION ================= -->
   <section class="services-section">
-    <h2 class="section-title">Our Services</h2>
+   
 
     <!-- 🔘 Filter Buttons -->
     <div class="filters">
@@ -58,48 +60,80 @@
     <!-- ================= GRID CONTAINER ================= -->
     <div class="services-grid">
       
-      <!-- 🧩 Card Example 1 -->
-      <div class="service-card">
-        <!-- Label (top-left) -->
-        <div class="service-label">Workshop</div>
+    <section class="panel">
+          <h2>Your Favorites</h2>
 
-        <!-- Favorite icon (top-right) -->
-        <div class="fav-icon">♡</div>
+          <div class="grid">
+            <!-- 1 -->
+            <div class="card">
+              <div class="img-wrap">
+                <img
+                  class="service service-img"
+                  src="Aataa Digital.png"
+                  alt="Aataa Digital"
+                />
+                <input class="fav-toggle" id="fav-1" type="checkbox" />
+                <label class="heart" for="fav-1"></label>
+              </div>
+              <h4>Aataa Digital</h4>
+              <p>
+                UI/UX Design Fundamentals.
+              </p>
+            </div>
 
-        <!-- Center image -->
-        <img src="../Images/Twaiq Academy.png" alt="Tuwaiq Academy" class="service-img">
+            <!-- 2 -->
+            <div class="card">
+              <div class="img-wrap">
+                <img
+                  class="service service-img"
+                  src="Twaiq Acedemy.png"
+                  alt="Twaiq Academy"
+                />
+                <input class="fav-toggle" id="fav-2" type="checkbox" />
+                <label class="heart" for="fav-2"></label>
+              </div>
+              <h4>Twaiq Academy</h4>
+              <p>
+                Image Processing Using Python.
+              </p>
+            </div>
 
-        <!-- Title -->
-        <h3 class="service-title">Introduction to Business Analysis</h3>
+            <!-- 3 -->
+            <div class="card">
+              <div class="img-wrap">
+                <img
+                  class="service service-img"
+                  src="KSU.png"
+                  alt="KSU"
+                />
+                <input class="fav-toggle" id="fav-3" type="checkbox" />
+                <label class="heart" for="fav-3"></label>
+              </div>
+              <h4>KSU</h4>
+              <p>Cybersecurity Essentials.</p>
+            </div>
 
-        <!-- Description -->
-        <p class="service-desc">
-          The program equips participants with fundamental cloud computing skills using Alibaba Cloud, covering setup, networking, and AI integration.
-        </p>
-
-        <!-- Footer (price + button) -->
-        <div class="service-footer">
-          <span class="service-price">100 ﷼</span>
-          <a href="#" class="service-btn">Register Now</a>
-        </div>
-      </div>
-
-      <!-- 🧩 Duplicate this block for more cards -->
-      <div class="service-card">
-        <div class="service-label">Course</div>
-        <div class="fav-icon">♡</div>
-        <img src="../Images/Sdaia.png" alt="SDAIA Course" class="service-img">
-        <h3 class="service-title">AI for Beginners</h3>
-        <p class="service-desc">
-          Learn the basics of Artificial Intelligence and its real-world applications through interactive hands-on lessons.
-        </p>
-        <div class="service-footer">
-          <span class="service-price">Free</span>
-          <a href="#" class="service-btn">Register Now</a>
-        </div>
-      </div>
-
+            <!-- 4 -->
+            <div class="card">
+              <div class="img-wrap">
+                <img
+                  class="service service-img"
+                  src="Sdaia.png"
+                  alt="SDAIA"
+                />
+                <input class="fav-toggle" id="fav-4" type="checkbox" />
+                <label class="heart" for="fav-4"></label>
+              </div>
+              <h4>SDAIA</h4>
+              <p>
+                Data Analytics Internship.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
+  
   </section>
 
   <!-- ================= FOOTER ================= -->

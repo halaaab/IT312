@@ -172,16 +172,35 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Hero section */
 .hero {
   text-align: center;
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
 .hero-img {
-  width: 100%;
-  height: auto;
+  width: 100%;           /* make it span the full page width */
+  height: 280px;         /* adjust smaller or larger as you like */
+  object-fit: contain;   /* ensures the full image is visible */
   border-radius: 0;
+  margin: 0;
+  display: block;
 }
+
+/* remove any spacing before the services section */
+.services-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* make "Our Services" bar stick directly under image */
+.section-title {
+  margin-top: -100px;   /* pulls the green bar up slightly */
+  position: relative;
+  z-index: 5;
+}
+
 
 /* Section title */
 .section-title {
@@ -222,117 +241,50 @@ body {
   color: #fff;
 }
 
-/* =========================================
-   GRID + CARD DESIGN
-========================================= */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 40px;
-  justify-items: center;
-}
-
-/* Each service card */
-.service-card {
-  position: relative;
-  background: #fff;
-  border: 1px solid #dcdcdc;
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  width: 320px;
-  padding: 25px 20px 30px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.grid .card {
+  background-color: #fff;    /* white cards instead of gray */
+  border-radius: 10px;
   overflow: hidden;
-}
-
-.service-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* Label in corner */
-.service-label {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: #c4b3e5;
-  color: #3a2d5b;
-  font-weight: 600;
-  padding: 5px 12px;
-  border-radius: 6px;
-  font-size: 13px;
-}
-
-/* Favorite heart icon */
-.fav-icon {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 22px;
-  color: #b3b3b3;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-.fav-icon:hover {
-  color: #d12f5a;
-}
-
-/* Service image */
-.service-img {
-  display: block;
-  margin: 50px auto 15px;
-  width: 80%;
-}
-
-/* Title */
-.service-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #00321a;
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-/* Description text */
-.service-desc {
-  font-size: 14px;
-  color: #333;
-  text-align: center;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  height: 70px;
-  overflow: hidden;
-}
-
-/* Bottom section */
-.service-footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
 }
 
-/* Price */
-.service-price {
-  font-weight: 600;
-  color: #00321a;
-  font-size: 16px;
+/* Logo in favorites */
+.service-img {
+  width: 100%;
+  height: 150px;             /* you can increase to 180px if you want larger images */
+  object-fit: contain;       /* no cropping */
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
-/* Button */
-.service-btn {
-  background: #00321a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 8px 18px;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-.service-btn:hover {
-  background: #026442;
+
+/* Fix heart icon alignment — top right corner */
+.img-wrap {
+  position: relative;
+  width: 100%;
 }
 
+.heart {
+  position: absolute;
+  top: 10px;           /* distance from the top */
+  right: 10px;         /* move to the right side */
+  color: #c00;         /* heart color */
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.service-img {
+  width: 100%;
+  height: 180px; /* make a bit taller */
+  object-fit: cover; /* fills the box evenly */
+  background-color: #fff;
+  border-radius: 10px;
+}
 /* =========================================
    FOOTER
 ========================================= */
